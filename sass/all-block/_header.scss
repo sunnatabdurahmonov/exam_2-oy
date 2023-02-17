@@ -1,0 +1,142 @@
+header {
+    padding-top: 22px;
+}
+
+.nav_menu {
+    @include centeritem();
+    column-gap: 58px;
+}
+
+.menu_input {
+    display: none;
+}
+
+.menu_label {
+    display: none;
+
+    @include for-phone() {
+        display: block;
+    }
+}
+
+.menu-lebel-2 {
+    display: none;
+}
+
+.menu_bar {
+    @include centeritem();
+    justify-content: space-between;
+    width: 100%;
+
+    @include for-phone() {
+        flex-direction: column;
+        height: 90vh;
+        position: fixed;
+        max-width: 256px;
+        left: -100%;
+        bottom: 0;
+        z-index: 10;
+        background-color: #333A44;
+        padding: 0 24px;
+        transition: 0.5s;
+    }
+}
+
+.menu_input:checked~.menu_bar {
+    left: 0;
+}
+
+.menu_img {
+    @include for-phone() {
+        margin: 0 auto;
+    }
+}
+
+.menu_list {
+    @include centeritem();
+    list-style: none;
+    column-gap: 32px;
+
+    @include for-phone() {
+        padding-right: 100px;
+        flex-direction: column;
+        row-gap: 24px;
+        width: 100%;
+        padding-top: 64px;
+    }
+}
+
+.menu_link {
+    text-decoration: none;
+    color: $text-color;
+
+    @include for-phone() {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        color: #E5ECF4;
+    }
+}
+
+.btn {
+    width: 180px;
+    height: 53px;
+    background-color: $button-color;
+    border: none;
+    color: white;
+
+    @include for-phone() {
+        margin-bottom: 24px;
+    }
+}
+
+.scooter {
+    margin-top: 25px;
+    background-image: url(../../images/Bitmap.svg);
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 153px;
+    padding-left: 165px;
+}
+
+.nav_title {
+    font-family: $title_font;
+    max-width: 500px;
+    font-weight: 700px;
+    font-size: 56px;
+    line-height: 56px;
+    color: #FFFFFF;
+    letter-spacing: -2.5px;
+}
+
+.nav_text {
+    max-width: 405px;
+    font-family: $text_font;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    padding-top: 40px;
+    padding-left: 57px;
+}
+
+.btn_2 {
+    margin-top: 40px;
+}
+.div{
+    display: flex;
+}
+
+.scooter_img {
+    position: absolute;
+    padding-top: 88px;
+    left: 0;
+}
+.scooter_img-2{
+    position: absolute;
+    max-width: 446px;
+    padding-top: 88px;
+    right: 0px;
+    left: 600px;
+}
