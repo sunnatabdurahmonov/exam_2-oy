@@ -30,7 +30,7 @@ header {
 
     @include for-phone() {
         flex-direction: column;
-        height: 90vh;
+        height: 100vh;
         position: fixed;
         max-width: 256px;
         left: -100%;
@@ -42,7 +42,7 @@ header {
     }
 }
 
-.menu_input:checked~.menu_bar {
+.menu_input:checked~.menu_bar{
     left: 0;
 }
 
@@ -77,6 +77,9 @@ header {
         color: #E5ECF4;
     }
 }
+.menu_link:hover{
+    border-bottom: 3px solid $button-color;
+}
 
 .btn {
     width: 180px;
@@ -89,18 +92,35 @@ header {
         margin-bottom: 24px;
     }
 }
+.btn:hover{
+    background-color: white;
+    color: $button-color;
+    border: 3px solid $button-color;
+}
+.btn:active{
+    background-color: $button-color;
+    border: 3px solid $button-color;
+    color: white;
+    opacity: 0.6;
+}
 
 .scooter {
     margin-top: 25px;
-    background-image: url(../../images/Bitmap.svg);
-    height: 650px;
+    background-image: url(../images/header_png.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 153px;
-    padding-left: 165px;
+    padding-bottom: 153px;
+    max-width: 100%;
+
+    @include for-tablet(){
+        padding-top: 135px;
+        padding-bottom: 217px;
+    }
+
 }
 
-.nav_title {
+.scooter_title {
     font-family: $title_font;
     max-width: 500px;
     font-weight: 700px;
@@ -108,9 +128,20 @@ header {
     line-height: 56px;
     color: #FFFFFF;
     letter-spacing: -2.5px;
+
+    @include for-tablet(){
+        margin: 0 auto;
+    }
+    @include for-phone(){
+        text-align: center;
+    }
 }
 
-.nav_text {
+.scooter_title:hover{
+    color: $button-color;
+}
+
+.scooter_text {
     max-width: 405px;
     font-family: $text_font;
     font-weight: 400;
@@ -118,25 +149,70 @@ header {
     line-height: 25px;
     color: #FFFFFF;
     padding-top: 40px;
-    padding-left: 57px;
+
+    @include for-tablet(){
+       max-width: 573px;
+       text-align: center;
+
+       @include for-phone(){
+        max-width: 320px;
+       }
+    }
 }
 
+.scooter_text:hover{
+    color: $button-color;
+    opacity: 0.4;
+}
+
+.button{
+    @include for-tablet(){
+        text-align: center;
+    }
+}
 .btn_2 {
-    margin-top: 40px;
-}
-.div{
-    display: flex;
+    margin-top: 80px;
+    @include for-tablet(){
+        margin-top: 22px;
+    }
 }
 
-.scooter_img {
-    position: absolute;
-    padding-top: 88px;
-    left: 0;
+.scooter_card{
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
 }
-.scooter_img-2{
-    position: absolute;
-    max-width: 446px;
-    padding-top: 88px;
-    right: 0px;
-    left: 600px;
+
+.scooter_diceration{
+    position: relative;
+    right: 100px;
+
+    @include for-tablet(){
+        right: 0;
+        left: 200px;
+    }
+}
+
+.scooter_image{
+    transform: translateX(-165px);
+    padding-top: 80px;
+
+    @include for-tablet(){
+        display: none;
+    }
+}
+
+.scooter_image_2{
+    padding-top: 80px;
+    transform: translateX(-50px);
+
+    @include for-tablet(){
+        position: relative;
+        top: 200px;
+        right: 500px;
+
+        @include for-phone(){
+            transform: translateY(60px);
+        }
+    }
 }

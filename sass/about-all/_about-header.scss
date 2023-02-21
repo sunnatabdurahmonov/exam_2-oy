@@ -1,0 +1,36 @@
+.about{
+    margin-top: 22px;
+    background-image: url(../images.about/about_1header.png);
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: sepia(2%) brightness(88%) saturate(34%) contrast(101%) invert(16%);
+-webkit-filter: sepia(2%) brightness(88%) saturate(34%) contrast(101%) invert(16%);
+-moz-filter: sepia(2%) brightness(88%) saturate(34%) contrast(101%) invert(16%);
+}
+
+.about_card {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+  
+.about_header-img{
+    @include for-phone(){
+        display: none;
+    }
+}
+.about_card-title {
+    padding-left: 165px;
+    font-family: $title_font;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: #FFFFFF;
+}
+.about_card-title:hover{
+    color: $button-color;
+}

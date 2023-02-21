@@ -1,0 +1,65 @@
+.careers{
+    background-image: url(../images_Careers/careers_header.png);
+    margin-top: 22px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    filter: sepia(2%) brightness(88%) saturate(34%) contrast(101%) invert(16%);
+    -webkit-filter: sepia(2%) brightness(88%) saturate(34%) contrast(101%) invert(16%);
+    -moz-filter: sepia(2%) brightness(88%) saturate(34%) contrast(101%) invert(16%);
+}
+
+.careers_btn {
+    padding-top: 40px;
+}
+
+.careers_card {
+    margin-top: 120px;
+}
+
+.careers_menu {
+    max-width: 1110px;
+    @include centeritem();
+    justify-content: space-between;
+    background-color: #F2F5F9;
+    padding: 32px 35px;
+    margin-top: 24px;
+
+    @include for-phone(){
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.careers_diceration{
+    @include for-phone(){
+        text-align: center;
+    }
+}
+.careers_menu:hover{
+    border: 3px solid $button-color;
+    color: $button-color;
+}
+
+.careers_title {
+    font-family: $title_font;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: #495567;
+}
+.careers_title:hover{
+    color: $button-color;
+    border-bottom: 2px solid #000;
+}
+
+.careers_text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #495567;
+}
+.careers_text:hover{
+    opacity: 0.4;
+    color: $button-color;
+}

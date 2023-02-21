@@ -1,0 +1,254 @@
+section {
+    margin-top: 150px;
+}
+
+.section_about-menu {
+    @include centeritem();
+    column-gap: 70px;
+
+    @include for-tablet() {
+        flex-direction: column-reverse;
+        row-gap: 56px;
+
+    }
+}
+
+.section_about-text {
+    @include for-tablet() {
+        text-align: center;
+        padding-left: 70px;
+    }
+}
+
+.section-about_title {
+    max-width: 445px;
+    font-family: $title_font;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #495567;
+}
+.section-about_title:hover{
+    color: $button-color;
+}
+
+.section-about_diceration {
+    max-width: 445px;
+    font-family: $text_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+    padding-top: 24px;
+}
+.section-about_diceration:hover{
+    opacity: 0.4;
+    color: $button-color;
+}
+
+.section_about-img {
+    display: flex;
+    position: relative;
+
+    @include for-tablet() {
+        padding-right: 50px;
+    }
+}
+
+.about_img {
+    position: relative;
+    left: 164px;
+}
+
+.about_img-2 {
+    position: absolute;
+    top: 270px;
+    left: 35px;
+}
+
+.about_img_menu {
+    display: flex;
+    position: relative;
+    right: 55px;
+
+    @include for-tablet() {
+        left: 50px;
+    }
+}
+
+.better_menu {
+    column-gap: 190px;
+    padding-top: 165px;
+
+    @include for-tablet() {
+        flex-direction: column;
+    }
+}
+
+.img_menu_2 {
+    position: absolute;
+    left: -106px;
+    top: 20px
+}
+
+.img_menu_3 {
+    position: absolute;
+    left: -106px;
+
+    @include for-phone() {
+        display: none;
+    }
+}
+
+.Our_card {
+    padding-top: 100px;
+}
+
+.Our_card-title {
+    font-family: $title_font;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -2.14286px;
+    color: #495567;
+}
+.Our_card-title:hover{
+    color: $button-color;
+}
+
+.Our_menu {
+    @include centeritem();
+    column-gap: 30px;
+
+    @include for-tablet {
+        flex-direction: column;
+    }
+    // @include for-phone(){
+    //     margin: 0 auto;
+    // }
+}
+
+
+.our_tech {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.our-title {
+    font-family: $title_font;
+    padding-top: 32px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -1.07143px;
+    color: #495567;
+}
+.our-title:hover{
+    color: $button-color;
+}
+.our_text {
+    font-family: $text_font;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #939CAA;
+    padding-top: 27px;
+
+    @include for-tablet() {
+        max-width: 457px;
+    }
+}
+.our_text:hover{
+    opacity: 0.4;
+    color: $button-color;
+}
+
+.FAQs {
+    padding-top: 120px;
+}
+
+.faqs_menu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 64px;
+
+    @include for-tablet(){
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.how_it{
+    @include for-tablet(){
+        padding-top: 32px;
+        margin: 0 auto;
+    }
+    @include for-phone(){
+        margin: 0 auto;
+    }
+}
+.faqs_menu>h3 {
+    font-family: $title_font;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1.78571px;
+    color: #495567;
+}
+.faqs_menu>h3:hover{
+    color: $button-color;
+}
+.how_card {
+    max-width: 730px;
+    background-color: #F2F5F9;
+    padding: 32px;
+}
+.how_card:hover{
+    border: 3px solid $button-color;
+}
+
+.how_it-work {
+    display: flex;
+    justify-content: space-between;
+}
+
+.how_title{
+    font-family: $title_font;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: #495567;
+}
+.how_title:hover{
+    color: $button-color;
+    border-bottom: 2px solid #000;
+}
+.how_text>p {
+    padding-top: 24px;
+    font-family: $text_font;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #495567;
+
+}
+.how_text>p:hover{
+    opacity: 0.4;
+    color: $button-color;
+}
+.can{
+    display: flex;
+    margin-top: 16px;
+    justify-content: space-between;
+    max-width:730px;
+    background-color: #F2F5F9;;
+    padding: 32px;
+} 
+.can:hover{
+    border: 3px solid $button-color;
+}

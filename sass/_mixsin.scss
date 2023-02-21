@@ -5,14 +5,14 @@
 }
     
 @mixin for-tablet {
-    @media screen and (max-width:992px){
+    @media screen and (max-width:1000px){
         @content;
         
     }
     
 }
 @mixin for-phone {
-    @media screen and (max-width:640px){
+    @media screen and (max-width:738px){
         @content;
     }
     

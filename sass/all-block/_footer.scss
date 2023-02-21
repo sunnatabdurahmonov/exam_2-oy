@@ -1,0 +1,52 @@
+footer {
+    background-color: $footer-color;
+}
+
+.footer_card {
+    @include centeritem();
+
+    @include for-phone(){
+        flex-direction: column;
+        width: 100%;
+    }
+}
+.footer_menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 35px;
+    padding-bottom: 32px;
+}
+
+.footer_list {
+    @include centeritem();
+    list-style: none;
+    padding-left: 58px;
+    column-gap: 32px;
+
+    @include for-phone(){
+        flex-direction: column;
+        width: 100%;
+        padding-right: 60px;
+
+    }
+}
+
+.footer_link {
+    font-family:$title_font;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+}
+
+.footer_link:hover{
+    border-bottom: 3px solid $button-color;
+}
+
+.footer_img{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}

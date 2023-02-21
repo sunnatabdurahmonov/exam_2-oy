@@ -9,6 +9,7 @@
 }
 body{
     overflow-x: hidden;
+    font-family: $text_font;
 }
 .container{
     max-width: 1140px;
@@ -16,3 +17,6 @@ body{
     padding: 0 15px;
 }
 @import'./all-block/all-block';
+@import'./about-all/about-all';
+@import'./carrers_all/all-block-careers';
+@import'./location-all/location';

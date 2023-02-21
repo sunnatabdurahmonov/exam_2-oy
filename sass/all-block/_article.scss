@@ -1,0 +1,42 @@
+article {
+    background-color: #495567;
+    background-image: url(../../images/article_0.svg);
+    background-repeat: no-repeat;
+    position: relative;
+    background-position-x:100%;
+    background-position-y:100%; 
+    margin-top: 120px;
+}
+
+.article-card {
+    @include centeritem();
+    column-gap: 200px;
+    justify-content: space-between;
+    padding-top: 102px;
+    padding-bottom: 102px;
+
+    @include for-tablet(){
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+.article_card_title {
+    width: 500px;
+    font-family: $title_font;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: #FFFFFF;
+
+    @include for-tablet(){
+        text-align: center;
+    }
+}
+.article_card_title:hover{
+    color: $button-color;
+}
+.article_link{
+    display: flex;
+    column-gap: 20px;
+}

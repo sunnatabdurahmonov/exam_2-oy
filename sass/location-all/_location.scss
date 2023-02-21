@@ -1,0 +1,48 @@
+.location {
+    margin-top: 22px;
+    background-image: url(../images_location/location_header.png);
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: sepia(2%) brightness(88%) saturate(34%) contrast(101%) invert(16%);
+    -webkit-filter: sepia(2%) brightness(88%) saturate(34%) contrast(101%) invert(16%);
+    -moz-filter: sepia(2%) brightness(88%) saturate(34%) contrast(101%) invert(16%);
+}
+.location_img{
+    max-width: 100%;
+}
+.location_images {
+    @include for-phone() {
+        display: none;
+    }
+}
+
+.location_menu {
+    @include centeritem;
+    padding-top: 50px;
+    column-gap: 50px;
+
+    @include for-tablet(){
+        flex-direction: column;
+        text-align: center;
+        row-gap: 40px;
+    }
+}
+
+.location_title {
+    font-family: $title_font;
+    max-width: 351px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #495567;
+}
+
+.location_text {
+    font-weight: 400;
+    max-width: 445px;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+}
